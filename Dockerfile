@@ -7,6 +7,6 @@ RUN apt-get install -y graphviz cflow
 
 RUN cd ~ && git clone https://github.com/tinyclub/linux-0.11-lab
 RUN mv ~/linux-0.11-lab/* ~/
-RUN cd ~ && make
+RUN cd ~/0.11 && make
 
 ENTRYPOINT [ "bash" ]
